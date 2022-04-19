@@ -1,0 +1,27 @@
+  <!-- <div id="content">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybCUyMGZhY2V8ZW58MHx8MHx8&w=1000&q=80" class="ribbon" width="100px" height="100px" />
+  </div> -->
+  <div style="text-align: center">
+    <h2>getPhotos</h2>
+    <button (click)="getPhotos()">Photos</button>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th id="dataWidth">albumId</th>
+        <th id="dataWidth">Id</th>
+        <th id="dataWidth1">title</th>
+        <th id="dataWidth1">url</th>
+        <th id="dataWidth1">thumbnailUrl</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let dt of data">
+        <td id="dataWidth">{{dt.albumId}}</td>
+        <td id="dataWidth">{{dt.id}}
+        <td id="dataWidth1">{{dt.title | slice:1-15}}</td>
+        <td id="dataWidth1">{{dt.url}}</td>
+        <td id="dataWidth2">{{dt.thumbnailUrl}}</td>
+      </tr>
+    </tbody>
+  </table>

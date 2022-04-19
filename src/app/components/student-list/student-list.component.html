@@ -1,0 +1,24 @@
+<div style="text-align: center">
+<h2>GET USERS</h2>
+  <button (click)="getUser()">UsersDta</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th id="dataWidth">id</th>
+        <th id="dataWidth">name</th>
+        <th id="dataWidth1">username</th>
+        <th id="dataWidth1">Email</th>
+        <th id="dataWidth1">address</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let dt of data">
+        <td id="dataWidth">{{dt.id}}</td>
+        <td id="dataWidth">{{dt.name}}
+        <td id="dataWidth1">{{dt.username}}</td>
+        <td id="dataWidth1">{{dt.email}}</td>
+        <td id="dataWidth2">{{dt.address}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

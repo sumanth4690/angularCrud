@@ -1,0 +1,42 @@
+nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-left: 20px;
+  }
+  nav a:visited{
+    color: #3643b6;
+  }
+  nav a:hover {
+    color: #fff;
+    background-color: #3643b6;
+  }
+  nav a.active {
+    color:  #ce2b2b;
+    background-color: #49ce0c;
+  }
+#content-video {
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right:5px;
+    // position:absolute;
+    float:right;
+}
+#content img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.video-circle {
+    border: 5px solid rgb(21, 216, 67);
+    border-radius: 50%;
+    object-fit: cover;
+}
+.video{
+ text-align: right;
+ margin-right: 2vw;    
+}

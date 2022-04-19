@@ -1,0 +1,23 @@
+<div style="text-align: center">
+    <h1>GET</h1>
+    <button (click)="getData()">Fetch data</button>
+    <table class="table">
+        <thead>
+          <tr>
+            <th id="dataWidth">PostId</th>
+            <th id="dataWidth">Id</th>
+            <th id="dataWidth1">Name</th>
+            <th id="dataWidth1">Email</th>
+            <th id="dataWidth1">Body</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let dt of data">
+            <td id="dataWidth">{{dt.postId}}</td>
+            <td id="dataWidth">{{dt.id}}
+            <td id="dataWidth1">{{dt.name | slice:1-15}}</td>
+            <td id="dataWidth1">{{dt.email}}</td>
+            <td id="dataWidth2">{{dt.body | slice:1-30}}</td>
+          </tr>
+        </tbody>
+      </table>

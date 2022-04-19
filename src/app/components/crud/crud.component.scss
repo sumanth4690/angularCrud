@@ -1,0 +1,52 @@
+$bgcolor: rgb(46, 40, 40);
+$textcolor: white;
+// $padding :10px;
+$text-size:20px;
+$mcolor:green;
+$margin:10px;
+.NavBar{
+    background-color: $bgcolor;
+    color: $textcolor;
+    // padding: $padding;
+    padding-top: 0px;
+    font-size: $text-size;
+    margin-top: $margin;
+    }
+a:link{
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.bdr{
+    border: 10px solid greenyellow;
+    color:white;
+    border-radius: 10px;
+    // font-size: 30px;
+    margin: 10px;
+    ;
+    background-color: greenyellow;
+}
+.NavTxt{
+    color: greenyellow;
+    text-align: center;
+
+}
+*{
+    border-radius: 10px;
+}
+.headerTxt{
+    background: rgb(228, 1, 248);
+    border-radius: 5px;
+}
+.border{
+    border: 20px solid black;
+}
+// .btn{
+//     background-color: black;
+//     color: azure;
+//     border-radius: 10px;
+// }
